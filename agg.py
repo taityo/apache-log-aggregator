@@ -8,7 +8,7 @@ if __name__ == "__main__":
     
     # コマンドを定義
     parser = ap.ArgumentParser(description="Webサーバのアクセスログを集計するCLI")
-    parser.add_argument("method", help="集計方法を指定する。timeかhostを指定する事ができる")
+    parser.add_argument("method", metavar="[time/host]", help="集計方法を指定する。timeかhostを指定する事ができる")
     parser.add_argument("-f", "--file", type=lambda x:x.split(","), help="集計するファイルを指定する")
     parser.add_argument("-t", "--term", type=lambda x:x.split(":"), help="集計した期間を指定する")
     

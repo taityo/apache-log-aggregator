@@ -2,6 +2,7 @@ from abc import ABCMeta, abstractmethod
 import apache_log_parser as alp
 
 class LogData():
+    #time_format = "%Y/%m/%d"
     time_format = "%Y/%m/%d %H:%M:%S"
     
     # timeは"%Y/%m/%d %H:%M:%S"の形式で入力する
