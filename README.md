@@ -5,15 +5,15 @@
 ## Installation
 ### pipenv 
 ```
-$ git clone https://github.com/taityo/fixpoint-coding-test.git
-
+$ git clone https://github.com/taityo/apache-log-aggregator.git
+$ cd ~/apache-log-aggregator/
 $ pipenv install
 ```
 
 ### pip
 ```
-$ git clone https://github.com/taityo/fixpoint-coding-test.git
-
+$ git clone https://github.com/taityo/apache-log-aggregator.git
+$ cd ~/apache-log-aggregator/
 $ pip install -r requirements.txt
 ```
 
@@ -47,11 +47,13 @@ RemoteHost      AccessCount
 ```
 
 複数ファイルを集計する場合は、コンマ(,)で区切る
+ファイルは2つ以上指定する事も可能
 ```
 $ python agg.py time -f log/access_log,log/access_log2
 ```
 
-期間を指定して集計する
+期間を指定する場合は、コロン(:)で区切る
+始まりの日付と終わりの日付のみを指定できる
 ```
 $ python agg.py time -f log/access_log -t 2020/03/03:2020/05/02
 ```
