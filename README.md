@@ -20,7 +20,6 @@ $ pip install -r requirements.txt
 ## Usage
 ```
 $ python agg.py -h
-
 usage: agg.py [-h] [-f FILE] [-t TERM] [time/host]
 
 Webサーバのアクセスログを集計するCLI
