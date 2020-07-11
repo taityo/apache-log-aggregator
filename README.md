@@ -19,7 +19,19 @@ $ pip install -r requirements.txt
 
 ## Usage
 ```
-$ python agg.py [time/host] [-f FILE] [-t TERM]
+$ python agg.py -h
+
+usage: agg.py [-h] [-f FILE] [-t TERM] [time/host]
+
+Webサーバのアクセスログを集計するCLI
+
+positional arguments:
+  [time/host]           集計方法を指定する。timeかhostを指定する事ができる
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f FILE, --file FILE  集計するファイルを指定する
+  -t TERM, --term TERM  集計した期間を指定する
 ```
 
 ## Example
