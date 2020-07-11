@@ -51,5 +51,7 @@ if __name__ == "__main__":
         print("Time      \tAccessCount")
     elif method == "host":
         print("RemoteHost\tAccessCount")
-    for key in result.keys():
-        print(f"{key}\t{result[key]}")
+
+    sorted_result = sorted(result.items(), key=lambda x:x[1], reverse=True)
+    for key,value in sorted_result:
+        print(f"{key}\t{value}")
