@@ -2,6 +2,10 @@
 
 これはApacheのアクセスログを集計するCLIです。
 
+## Requirement
+* python 3.6.9
+* pip or pipenv
+
 ## Installation
 ### pipenv 
 ```
